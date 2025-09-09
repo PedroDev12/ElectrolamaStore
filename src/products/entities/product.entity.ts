@@ -23,4 +23,8 @@ export class Product {
 
     @Column({type: 'int'})
     categoryId: number
+
+    // Nuevo campo para la descripción
+    @Column({ type: 'text', nullable: true })
+    description?: string
 }
